@@ -1,0 +1,618 @@
+﻿/* Global classes  Starts*/
+* html img, * html .png
+{
+	behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",         this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",         this.src = "transparent.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),         this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",         this.runtimeStyle.backgroundImage = "none")),this.pngSet=true) );
+}
+
+body
+{
+	margin: 0;
+	font-family: tahoma, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #333;
+	height: 100%;
+}
+
+img
+{
+	border: none;
+}
+a
+{
+	font-family: tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333;
+	text-decoration: underline;
+}
+a
+{
+	font-family: tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333;
+	text-decoration: none;
+}
+.floatLeft
+{
+	float: left;
+}
+.floatRight
+{
+	float: right;
+}
+.clearBoth
+{
+	clear: both;
+}
+#wrapper
+{
+	width: 100%;
+}
+/* Header CSS */
+#header
+{
+	width: 100%;
+	height: 58px;
+	float: left;
+}
+#header .top
+{
+	background: #0070b2;
+	width: 100%;
+	height: 2px;
+}
+#header .left
+{
+	width: 40%;
+	height: 49px;
+	padding: 7px 0 0 20px;
+	float: left;
+}
+.logoDivider
+{
+	padding: 0 15px;
+}
+.disableClass
+{
+	background-color:Transparent;
+	color:Black;
+}
+#header .right
+{
+	width: 55%;
+	height: 56px;
+	float: right;
+	background: url(../../images/rightHeaderImg.jpg) no-repeat right top;
+}
+#header .right .loginInfo
+{
+	margin: 15px 10px 0 0px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #516d76;
+	float: right;
+}
+#header .right .loginInfo .textDivider
+{
+	padding: 0 5px;
+}
+#header .right a.logOut
+{
+	color: #db0c04;
+	font-size: 12px;
+	font-weight: bold;
+	background: url(../../images/icoLogOut.gif) no-repeat right center;
+	padding-right: 18px;
+}
+/* Top Navigation CSS */
+#topNavigation
+{
+	width: 100%;
+	background: url(../../images/topNavBg.jpg) repeat-x;
+	height: 28px;
+	float: left;
+}
+#topNavigation ul
+{
+	width: 60%;
+	margin: 0;
+	padding: 0 0 0 20px;
+	list-style: none;
+	float: left;
+	font-size: 12px;
+	color: #f9f9f9;
+	font-weight: bold;
+}
+#topNavigation li
+{
+	float: left;
+	background: url(../../images/linkBg.jpg) no-repeat right top;
+	padding: 8px 30px 0 00px;
+	height: 22px;
+}
+#topNavigation ul li a
+{
+	color: #fff;
+	font-size: 12px;
+}
+.jqueryslidemenu #rightLink
+{
+	width: 180px;
+	text-align: right;
+	float: right;
+	font-size: 11px;
+	font-weight: normal;
+	background: url(../../images/rightNavigationBg.jpg) no-repeat left top;
+	height: 28px;
+}
+.jqueryslidemenu #rightLink a.rightLink
+{
+	text-align: right;
+	float: right;
+	color: #fff;
+	display: block;
+	background: url(../../images/rightLinkIco.png) no-repeat;
+	padding: 0 20px 0 25px;
+	margin: 7px 0 0 10px;
+	height: 23px;
+	z-index: 10024;
+}
+
+.headerforGridView
+{
+	overflow:auto;
+	position:relative;
+}
+
+/* Middle section CSS */
+
+#middle
+{
+	margin: 2px 0;
+	float: left;
+	width: 100%;
+	height: 100%;
+	background: url(../../images/middleBg.jpg) repeat-x #e9eff3;
+}
+#middle .middleContent
+{
+	margin: 7px;
+}
+#middle .breadcrum
+{
+	width: 100%;
+	color: #333;
+	padding-bottom: 10px;
+}
+#middle .breadcrum a
+{
+	font-size: 11px;
+	color: #333;
+	padding: 0 2px 10px;
+	text-decoration: underline;
+}
+#middle .breadcrum a:hover
+{
+	font-size: 11px;
+	color: #333;
+	padding: 0 2px 10px;
+	text-decoration: none;
+}
+
+#middle h1
+{
+	font-size: 14px;
+	color: #b95a1a;
+	font-weight: bold;
+	margin: 0 0 4px 0;
+	padding: 0;
+}
+
+.gridbodystyle
+{
+	width: 100%;
+	max-height: 400px;
+	/*height: expression( this.scrollHeight > 500 ? "500px" : "auto" ); 
+	overflow-x:hidden;*/
+	border-top: #466094 0px solid;
+	border-bottom: #466094 0px solid;
+	/*overflow:auto;*/
+}
+
+.TDhover
+{
+	color: red;
+	/*letter-spacing: 2;*/
+	font-family: Verdana;
+	font-size: 10pt;
+	padding-left: 5px;
+	padding-right: 5px;
+	
+	/*color: red;*/
+	/*letter-spacing: 2;*/
+	/*font-family: Verdana;
+	font-size: small;*/
+	/*padding-left: 5px;
+	padding-right: 5px;
+	margin-left:8px;*/
+	/*overflow:hidden;*/
+	/*background-color: #FFFFFF;*/
+}
+
+.listRowCell
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 300px;
+	padding-left: 5px;
+	/*padding-right: 5px;*/
+	font-family: Verdana;
+	font-size: small;
+	padding: 1px 1px;
+	/*padding-top:1px;
+	padding-bottom:1px;
+	padding-left:5px;
+	padding-right:5px;*/
+	padding-left: 5px;
+	padding-right: 5px;
+
+	
+	
+	
+	/*border: 1px solid #c8b68d;*/
+	/*padding: 1px 1px 1px 1px ;
+	vertical-align: top;
+	margin-left: 8px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 300px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: Verdana;
+	font-size: small;*/
+}
+
+.listheaderrow
+{
+	border: 1px solid #c8b68d;
+	
+	color: #8d6f30;
+	vertical-align: top;
+	text-align: left;
+	background: url(../../images/dataGridHeaderBg.jpg) repeat-x bottom left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#middle .dataGrid
+{
+	border: 1px solid #809097;
+	border-collapse: collapse;
+	background: #fff;
+	font-family: Verdana;
+	font-size: small;
+}
+#middle .dataGrid th
+{
+	border: 1px solid #c8b68d;
+	padding: 5px 1px;
+	color: #8d6f30;
+	vertical-align: top;	
+	text-align: left;
+	background: url(../../images/dataGridHeaderBg.jpg) repeat-x bottom left;
+	margin-left: 8px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 300px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#middle .dataGrid th a
+{
+	color: #8d6f30;
+}
+
+/*#middle .dataGrid tr.odd
+{
+	background: #fbf5ea;
+}*/
+
+#middle .dataGrid td
+{
+	border: 1px solid #c8b68d;
+	padding: 1px 1px;
+	vertical-align: top;
+	margin-left: 8px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 300px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* Footer CSS*/
+#footer
+{
+	float: left;
+	width: 100%;
+	height: 41px;
+	background: url(../../images/footerBg.jpg) repeat-x;
+}
+#footer .right a
+{
+	text-decoration: underline;
+	color: #333;
+}
+#footer .right a:hover
+{
+	text-decoration: none;
+	color: #333;
+}
+
+#footer .left
+{
+	width: 30%;
+	float: left;
+	text-align: left;
+	background: url(../../images/footerLeftBg.jpg) no-repeat left;
+	height: 28px;
+	padding: 13px 0 0 20px;
+}
+#footer .right
+{
+	width: 60%;
+	float: right;
+	text-align: right;
+	background: url(../../images/footerRightBg.jpg) no-repeat right;
+	height: 28px;
+	padding: 13px 50px 0 0;
+}
+
+/*Newly added class*/
+/*Class for data processing div*/
+.wait
+{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	z-index: 10000;
+	background-color: Gray;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	outline: 2px;
+}
+
+/*class for link control*/
+.linkForAction
+{
+	cursor: pointer;
+	text-decoration: none;
+	color: #000;
+	background: #fbf5ea;
+}
+
+/*On txn form if txn for workflow initiated then show header in red*/
+
+.pendingAction
+{
+	font-size: 14px;
+	color: #E40B05;
+	font-weight: bold;
+	margin: 0 0 14px 0;
+	padding: 0;
+}
+
+.listMenuZindex
+{
+	z-index: 10024;
+}
+
+/* Add CSS for Tabs */
+
+.TabBox
+{
+	background: url(../../images/tabBoxBg.jpg) repeat-x top;
+	float: left;
+	width: 100%;
+}
+.TabBox .ActiveTab
+{
+	float: left;
+	margin-right: 5px;
+	border: 1px solid #a4853f;
+	border-bottom: none;
+}
+.TabBox .ActiveTab span
+{
+	padding: 15px 10px 0 10px;
+	background: url(../../images/activeTabBg.jpg) repeat-x top #fffefc;
+	display: block;
+	height: 22px;
+	float: left;
+	font-size: 11px;
+	color: #666666;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+.TabBox .Tab
+{
+	background: url(../../images/tabBg.jpg) repeat-x;
+	border: 1px solid #a4853f;
+	border-bottom: none;
+	height: 27px;
+	float: left;
+	margin-right: 5px;
+	margin-top: 9px;
+}
+.TabBox .Tab a
+{
+	padding: 4px 10px 0 10px;
+	height: 23px;
+	display: block;
+	float: left;
+	font-size: 11px;
+	color: #006699;
+	text-decoration: none;
+}
+.TabBox .TabContent
+{
+	clear: both;
+	background: url(../../images/tabContentBg.jpg) repeat-x bottom #ffffff;
+	border: 1px solid #a4853f;
+	border-top: 0;
+	padding: 10px 20px 20px;
+}
+
+/*Modified Tab class*/
+.menuTabs
+{
+	background: url(../../images/tabBoxBg.jpg) repeat-x top;
+	float: left;
+}
+.tab
+{
+	background: url(../../images/tabBg.jpg) repeat-x;
+	border: 1px solid #a4853f;
+	border-bottom: none;
+	height: 27px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 0px;
+}
+.tab a
+{
+	height: 23px;
+	display: block;
+	float: left;
+	font-size: 11px;
+	color: #006699;
+	text-decoration: none;
+}
+
+.selectedTab
+{
+	padding: 0px 0px 0 0px;
+	background: url(../../images/activeTabBg.jpg) repeat-x top #fffefc;
+	display: block;
+	height: 22px;
+	float: left;
+	font-size: 11px;
+	color: #666666;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.selectedTab table
+{
+	padding: 0px 0px 0 0px;
+	background: url(../../images/activeTabBg.jpg) repeat-x top #fffefc;
+	display: block;
+	height: 22px;
+	float: left;
+	font-size: 11px;
+	color: #666666;
+	font-weight: bold;
+	text-decoration: none;
+}
+.tabBody
+{
+	clear: both;
+	background: url(../../images/tabContentBg.jpg) repeat-x bottom #ffffff;
+	border: 0px solid #a4853f;
+	border-top: 0;
+	padding: 1px 1px 1px;
+}
+/*For grid search combo*/
+.setZindex
+{
+	z-index: 100;
+}
+
+/*Used in Workflow-RuleDefinition page*/
+.panel
+{
+	position: absolute;
+	top: 34;
+	left: 10;
+	width: 100%;
+	z-index: 1;
+	height: 85%;
+	visibility: hidden;
+	color: navy;
+	border: thin solid navy;
+	padding: 10;
+	overflow: auto;
+	background-color: white;
+}
+select
+{
+	z-index: 1;
+}
+
+/*Google page header*/
+h3
+{
+	font-size: 14px;
+	color: #b95a1a;
+	font-weight: bold;
+	margin: 0 0 14px 0;
+	padding: 0;
+}
+
+.myTable
+{
+	background-color: #c8b68d;
+}
+
+.odd
+{
+	background: #fbf5ea;
+	background-color: #FFFFFF;
+}
+.even
+{
+	/*background: #fbf5ea;*/
+	background-color: #fbf5ea;
+}
+.txtBoxCSS {
+	/*width: 221px;
+	background: transparent url('../../images/txtBox.jpg') no-repeat;
+	color : #747862;
+	height:20px;
+	border:0;
+	padding:4px 8px;
+	margin-bottom:0px;*/
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #868686;
+    border-radius: 0 3px 3px 0;
+    color: #686E75;
+    float: left;
+    margin: 0;
+    padding: 4px 6px;
+}
+.ButtonsCss 
+{
+	/*background-color: #DB6600;
+    background-image: url("../../images/button_bg.jpg");
+    border: 1px solid #DB6600;
+    color: #FFFFFF;
+    padding: 3px 6px;*/
+	
+}
+.ButtonsCssBlur
+{/*
+	background-color: #000000;
+    background-image: url("../../images/button_bg.jpg");
+    border: 1px solid #DB6600;*/
+}

@@ -1,0 +1,73 @@
+.contentdetails { float:left; width:750px; }
+
+.box { background:#fbfcfc; height:100%; padding:1px; width:750px  }
+.box-head { font-size:large; background:#b0c4de; height:50px; color:#fff; padding: 0 10px; line-height:32px; white-space:nowrap; border-bottom:solid 1px #fff; }
+.box-head .right{ padding-top:10px; line-height:13px;}
+.box-head .right label,
+.box-head .right input { float:left; }
+.box-head .right label { padding:4px 0 0 0;}
+.box-head .right input { margin-left:5px;}
+
+.box { -moz-border-radius:5px; -webkit-border-radius:5px; -moz-box-shadow: 0 0 6px #978f6c; -webkit-box-shadow: 0 0 6px #978f6c;}
+.box-head { -moz-border-radius-topleft:5px; -moz-border-radius-topright:5px; -webkit-border-top-left-radius:5px; -webkit-border-top-right-radius:5px; }
+
+.details { padding:15px 10px 0 10px;}
+.details label{ display:block; font-weight: bold; font-size:13px; padding-bottom:4px; }
+.details label span{ color:#999; font-weight: normal;}
+.details .field { display:block; }
+.details .inline-field .field { display:inline;}
+.details .req { font-size:13px; float:right; white-space:nowrap; color:#999;  }
+
+.details td b{color:Black;}
+
+.hamburgermenu{
+	width:100%; 
+	background:#1d1f20; 
+	height:30px; 
+	line-height:30px;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:0px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#131313;  position:absolute; text-align:center;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu li:hover{display: block;    background:#181818; padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
+.menu ul li a:hover {  color: #fff; text-decoration:none;}
+.menu a{text-decoration:none; color:white;}
+.menu a:hover{text-decoration:none; color:white;}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}

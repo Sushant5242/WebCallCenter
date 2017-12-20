@@ -1,0 +1,31 @@
+﻿.notifyjs-foo-base {
+  opacity: 0.90;
+  width: 400px;
+  background: #FD8CAA;
+  padding: 5px;
+  border-radius: 2px;
+  border : 1px solid rgb(156, 151, 151);
+}
+
+.notifyjs-foo-base .title {
+  width: auto;
+  float: left;
+  margin: 5px 5px 5px 5px;
+  text-align: left;  
+}
+
+.notifyjs-foo-base .buttons {
+  width: 70px;
+  float: right;
+  font-size: 9px;
+  padding: 5px;
+  margin: 2px;
+}
+
+.notifyjs-foo-base button {
+  font-size: 10px;
+  font-weight:bold;
+  padding: 5px;
+  margin: 2px;
+  width: 60px;
+}

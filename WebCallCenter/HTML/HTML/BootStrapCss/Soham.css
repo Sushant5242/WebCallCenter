@@ -1,0 +1,57 @@
+
+.TextClass
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+.OuterDiv
+{
+	height: 5px;
+	background-color: lightskyblue;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif, Monospace;
+	font-size: 9pt;
+	color: #ffffff;
+	padding: 0px;
+	border-right: lightskyblue thin solid;
+	border-top: lightskyblue thin solid;
+	border-left: lightskyblue thin solid;
+	border-bottom: lightskyblue thin solid;
+}
+.BlueStrip
+{
+	font-weight: bold;
+	font-size: small;
+	text-transform: capitalize;
+	color: black;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif, Monospace;
+	padding: 0px;
+	border-right: lightskyblue thin solid;
+	border-top: lightskyblue thin solid;
+	border-left: lightskyblue thin solid;
+	border-bottom: lightskyblue thin solid;
+}
+
+.DivBackColor
+{
+	font-weight: bold;
+	font-size: small;
+	text-transform: capitalize;
+	color: black;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif, Monospace;
+	padding: 0px;
+	background-color: aliceblue;
+}
+
+.ButtonStripBackColor
+{
+	font-weight: bold;
+	font-size: small;
+	text-transform: capitalize;
+	color: black;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif, Monospace;
+	padding: 0px;
+	background-color: #0066cc;
+}

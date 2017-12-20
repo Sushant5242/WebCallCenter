@@ -1,0 +1,28 @@
+﻿
+.padAll{padding:10px;}
+.hmNewsBg{float:left; width:445px;background:url(/images/hmnewsbg.jpg) repeat-x;}
+.page{float:left; width:950px; background:url(/images/pagecontentbg.jpg) repeat-x #fff; padding:0 10px;}
+.hmLeftPage{float:left; width:445px; height:365px; background:url(/images/hmleftpagebg.jpg) no-repeat; padding:15px;}
+.hmLeftPage h2{font-size:15px; margin:0; padding:0; margin-bottom:5px; color:#330000;}
+.hmRightPage{float:left; width:465px; height:365px; background:url(/images/hmrightpagebg.jpg) no-repeat; padding:15px 0 15px 10px; display:inline;}
+.hmRightPage h2{font-size:15px; margin:0; padding:0 0 0 5px; margin-bottom:5px; color:#0F3A4F;}
+.hmRightPage ol,li{margin:0; padding:0; list-style:none; text-align:right;}
+.hmRightPage ol{width:150px; margin-top:10px; font-size:11px; font-weight:bold;}
+.hmRightPage li{background:url(/images/liseparator.png) repeat-x;}
+.hmRightPage li a{padding:5px 10px; display:-moz-inline-block; display:inline-block; zoom:1; *display:inline; color:#0F3A4F; text-decoration:none;}
+.hmRightPage li.current{background-color:#A4D8F0; color:#0F3A4F;}
+.hmRightPage li.current a{padding:5px 10px; display:-moz-inline-block; display:inline-block; zoom:1; *display:inline; color:#000; text-decoration:none; background: url(/images/arroworg.gif) no-repeat right 10px; padding-right:15px; margin-right:10px;}
+.hmRightPage li a:hover{padding:5px 10px; display:-moz-inline-block; display:inline-block; zoom:1; *display:inline; color:#000; text-decoration:none; background: url(/images/arroworg.gif) no-repeat right 10px; padding-right:15px; margin-right:10px;}
+.hmRightPanel{width:285px; height:325px; padding:15px; background:url(/images/hmrightpagedetailsbg.jpg) no-repeat; float:left;}
+
+*html .hmRightPanel {
+margin-right:-3px; /* IE 6 fix */
+}
+
+.hmRightPanel img{margin-left:10px;}
+
+.dataPanels{height:156px; padding:0 8px; background:url(/images/newsbg.jpg) no-repeat; float:left; margin-top:10px;}
+.dataPanels h3{margin:0; padding:0; font-size:12px; padding-left:15px; background:url(/images/arrow.gif) no-repeat 0 5px; margin-bottom:3px;}
+
+#manufacturing{display:block;}
+#distribution,#plantM,#MES,#Mktg,#MM,#PDO{display:none;}
